@@ -1,0 +1,26 @@
+<!-- @dsCard group="Colors" viewport="700x190" name="Base & surfaces" subtitle="Deep near-black base, layered dark surfaces, and text — the dark foundation" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: var(--font-body); background: var(--bg-surface); padding: 18px; }
+  .row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
+  .sw { border-radius: var(--radius-md); height: 96px; border: 1px solid rgba(255,255,255,.10); }
+  .name { font-family: var(--font-heading); font-weight: 600; font-size: 12px; letter-spacing: 0.02em; margin: 8px 2px 1px; color: var(--text-strong); }
+  .hex { font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); margin: 0 2px; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div><div class="sw" style="background:var(--c-bg)"></div><div class="name">Base</div><div class="hex">#07090D</div></div>
+    <div><div class="sw" style="background:var(--c-paper)"></div><div class="name">Surface</div><div class="hex">#11151C</div></div>
+    <div><div class="sw" style="background:var(--c-mist)"></div><div class="name">Elevated</div><div class="hex">#161B23</div></div>
+    <div><div class="sw" style="background:var(--c-line)"></div><div class="name">Border</div><div class="hex">#1E2530</div></div>
+    <div><div class="sw" style="background:var(--c-white)"></div><div class="name">Text</div><div class="hex">#F7F7F7</div></div>
+    <div><div class="sw" style="background:var(--c-gray-500)"></div><div class="name">Muted</div><div class="hex">#9AA3AE</div></div>
+  </div>
+</body>
+</html>

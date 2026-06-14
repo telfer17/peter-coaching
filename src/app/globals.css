@@ -1,5 +1,33 @@
 @import "tailwindcss";
 
-@theme inline {
-  --font-sans: var(--font-geist-sans);
+/* Momentum Coaching design-system tokens (vendored from design-system/tokens/*).
+   These expose every brand CSS variable app-wide: colours, type scale, spacing,
+   radii, shadows, motion. We deliberately omit the upstream fonts.css CDN
+   @import — the four brand fonts are loaded via next/font (self-hosted) and
+   wired to the family variables below. */
+@import "../styles/tokens/colors.css";
+@import "../styles/tokens/typography.css";
+@import "../styles/tokens/spacing.css";
+
+/* Component styles (Button, Card, Input, …) + UI-kit responsive rules. */
+@import "../styles/components.css";
+
+/* Drive the brand font families through next/font variables (set in layout.tsx).
+   Defined last so they win over the literal family names in typography.css. */
+:root {
+  --font-display: var(--font-anton), "Arial Narrow", sans-serif;
+  --font-heading: var(--font-barlow), "Arial Narrow", sans-serif;
+  --font-body: var(--font-hanken), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SFMono-Regular", monospace;
 }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-page);
+  color: var(--text-body);
+  font: var(--type-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; }

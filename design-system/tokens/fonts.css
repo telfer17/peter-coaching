@@ -1,0 +1,17 @@
+/* ============================================================
+   FONTS — Momentum Coaching
+   Loaded from Google Fonts CDN. Self-host the .woff2 binaries
+   for full offline/production robustness (see README → Caveats).
+   - Anton          → display (jersey-number hero headlines)
+   - Barlow Condensed → headings, labels, buttons (athletic)
+   - Hanken Grotesk → body / UI text
+   - Geist Mono     → stats, fixtures, data
+   ============================================================ */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap");
+
+:root {
+  --font-display: "Anton", "Arial Narrow", sans-serif;
+  --font-heading: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", monospace;
+}

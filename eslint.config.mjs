@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Brand design-system drop-in: reference JSX/CSS, not part of the app build.
+    "design-system/**",
   ]),
 ]);
 
