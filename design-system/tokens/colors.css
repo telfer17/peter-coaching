@@ -1,0 +1,98 @@
+/* ============================================================
+   COLORS — Momentum Coaching  ·  DARK THEME
+   Brand palette supplied by the client. A deep near-black base
+   with layered dark surfaces, carrying a two-tone accent:
+     • Momentum Blue — bright blue for links / primary buttons /
+       hover; deep brand blue for large fills, gradients, blocks.
+     • Momentum Gold — used sparingly: heading underlines, the
+       active nav item, small dividers, hover highlights.
+   Reference the semantic aliases in components, not raw ramp steps.
+   ============================================================ */
+:root {
+  /* ---- Raw neutrals (dark ladder: base → surfaces → text) ---- */
+  --c-white:    #FFFFFF;   /* pure white — labels on colored/dark fills */
+  --c-bg:       #07090D;   /* page base */
+  --c-polar:    #0B0E13;   /* alt base / inset wells */
+  --c-paper:    #11151C;   /* card / elevated surface */
+  --c-mist:     #161B23;   /* hover wash / subtle fill */
+  --c-line:     #1E2530;   /* default border */
+  --c-gray-200: #2A323F;   /* stronger border / fill */
+  --c-gray-300: #3B4654;   /* strong border */
+  --c-gray-400: #6B7480;   /* placeholder / faint text */
+  --c-gray-500: #9AA3AE;   /* muted text */
+  --c-gray-600: #B9C0C9;   /* brighter muted */
+  --c-ink-700:  #C9CFD7;   /* secondary / body-bright text */
+  --c-ink-800:  #161B23;   /* dark hover / dark card border */
+  --c-ink-900:  #07090D;   /* darkest — deep panels, footer */
+
+  /* ---- Momentum Blue ---- */
+  --c-blue-tint:    rgba(30, 128, 227, 0.14); /* chip / icon-tile fill */
+  --c-blue-tint-2:  rgba(30, 128, 227, 0.22);
+  --c-blue-300:     #6FB0EE;  /* bright link / on-dark text */
+  --c-blue-400:     #3B93E8;  /* hover */
+  --c-blue-500:     #1E80E3;  /* primary — buttons, links, focus */
+  --c-blue-600:     #0A66C7;  /* press */
+  --c-blue-700:     #0556AF;  /* deep brand blue — fills, gradients, large blocks */
+  --c-blue-electric: #1E80E3; /* highlight / focus glow */
+
+  /* ---- Momentum Gold (use sparingly) ---- */
+  --c-gold-tint:   rgba(231, 182, 23, 0.14);
+  --c-gold-300:    #F4C634;  /* bright gold on dark */
+  --c-gold-400:    #E7B617;  /* primary gold accent */
+  --c-gold-500:    #C99A0F;
+  --c-gold-600:    #A77F0B;
+  --c-gold-amber:  #F4C634;  /* bright highlight on dark */
+
+  /* ---- Status (tuned for dark) ---- */
+  --c-success: #34C77B;
+  --c-success-tint: rgba(52, 199, 123, 0.16);
+  --c-warning: #E7B617;
+  --c-warning-tint: rgba(231, 182, 23, 0.16);
+  --c-danger:  #F0565B;
+  --c-danger-tint: rgba(240, 86, 91, 0.16);
+
+  /* ============================================================
+     SEMANTIC ALIASES — reference these in components
+     ============================================================ */
+  /* Surfaces */
+  --bg-page:        var(--c-bg);
+  --bg-surface:     var(--c-paper);
+  --bg-elevated:    var(--c-mist);
+  --bg-subtle:      var(--c-mist);
+  --bg-inverse:     #F4F5F7;          /* rare light block */
+  --bg-accent:      var(--c-blue-500);
+  --bg-accent-soft: var(--c-blue-tint);
+  --bg-accent-fill: var(--c-blue-700); /* deep brand blue — large blocks */
+  --bg-gold:        var(--c-gold-400);
+  --bg-gold-soft:   var(--c-gold-tint);
+
+  /* Text */
+  --text-strong:    var(--c-white);
+  --text-body:      var(--c-ink-700);
+  --text-muted:     var(--c-gray-500);
+  --text-inverse:   var(--c-bg);
+  --text-accent:    var(--c-blue-300);
+  --text-gold:      var(--c-gold-400);
+  --text-on-accent: var(--c-white);
+
+  /* Borders */
+  --border-subtle:  var(--c-line);
+  --border-strong:  var(--c-gray-300);
+  --border-accent:  var(--c-blue-500);
+  --border-gold:    var(--c-gold-400);
+  --border-inverse: var(--c-gray-200);
+
+  /* Interaction — primary (blue) */
+  --accent:        var(--c-blue-500);
+  --accent-hover:  var(--c-blue-400);
+  --accent-press:  var(--c-blue-600);
+  --accent-fill:   var(--c-blue-700);   /* deep brand blue */
+  --accent-tint:   var(--c-blue-tint);
+  --focus-ring:    var(--c-blue-500);
+
+  /* Interaction — secondary (gold, sparing) */
+  --gold:          var(--c-gold-400);
+  --gold-strong:   var(--c-gold-500);
+  --gold-tint:     var(--c-gold-tint);
+  --gold-on-dark:  var(--c-gold-amber);
+}

@@ -1,0 +1,27 @@
+<!-- @dsCard group="Colors" viewport="700x200" name="Momentum Gold — accent scale" subtitle="Used sparingly: heading underlines, active nav, small dividers, hover highlights" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: var(--font-body); background: var(--bg-surface); padding: 18px; }
+  .row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; max-width: 500px; }
+  .sw { border-radius: var(--radius-sm); height: 84px; border: 1px solid rgba(255,255,255,.10); }
+  .name { font-family: var(--font-mono); font-size: 10px; margin: 7px 1px 0; color: var(--text-strong); }
+  .hex { font-family: var(--font-mono); font-size: 9.5px; color: var(--text-muted); margin: 1px; }
+  .tag { display:inline-block; margin-top:10px; font-family: var(--font-heading); font-weight:600; font-size:10px; letter-spacing:.06em; color: var(--c-gold-400); }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div><div class="sw" style="background:var(--c-gold-tint)"></div><div class="name">tint</div><div class="hex">14% α</div></div>
+    <div><div class="sw" style="background:var(--c-gold-300)"></div><div class="name">300</div><div class="hex">#F4C634</div></div>
+    <div><div class="sw" style="background:var(--c-gold-400)"></div><div class="name">400 ★</div><div class="hex">#E7B617</div></div>
+    <div><div class="sw" style="background:var(--c-gold-500)"></div><div class="name">500</div><div class="hex">#C99A0F</div></div>
+    <div><div class="sw" style="background:var(--c-gold-600)"></div><div class="name">600</div><div class="hex">#A77F0B</div></div>
+  </div>
+  <span class="tag">★ ACCENT — SPARING. NEVER BODY TEXT, NEVER LARGE FILLS</span>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!-- @dsCard group="Brand" viewport="700x300" name="Logo — lockups" subtitle="Ascending-slash mark + MOMENTUM / COACHING wordmark, on light & dark" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: var(--font-body); background: var(--c-polar); }
+  .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 20px; }
+  .tile { border-radius: var(--radius-lg); border: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: center; min-height: 116px; padding: 20px; gap: 22px; }
+  .light { background: var(--c-white); }
+  .dark { background: var(--c-ink-900); border-color: transparent; }
+  .lockup { display: flex; align-items: center; gap: 14px; }
+  .markbox { width: 50px; height: 50px; border-radius: 12px; display: grid; place-items: center; flex: none; }
+  .markbox.on-light { background: var(--c-ink-900); }
+  .markbox.on-dark { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); }
+  .markbox svg { width: 26px; height: 23px; }
+  .wm-name { font-family: var(--font-display); font-size: 30px; line-height: 1; letter-spacing: 0.02em; }
+  .wm-sub { font-family: var(--font-heading); font-weight: 600; font-size: 11.5px; letter-spacing: 0.34em; margin-top: 4px; }
+  .light-txt .wm-name { color: var(--c-ink-900); }
+  .light-txt .wm-sub { color: var(--c-gray-500); }
+  .dark-txt .wm-name { color: #fff; }
+  .dark-txt .wm-sub { color: var(--c-gray-400); }
+  .mono { width: 76px; height: 76px; border-radius: 18px; background: var(--c-ink-900); display: grid; place-items: center; flex: none; position: relative; }
+  .mono span { font-family: var(--font-display); font-size: 42px; color: #fff; line-height: 1; }
+  .mono i { position: absolute; bottom: 16px; width: 32px; height: 4px; border-radius: 2px; background: var(--gold); }
+  .markrow { display: flex; gap: 16px; align-items: center; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="tile light">
+      <div class="lockup light-txt">
+        <div class="markbox on-light">
+          <svg viewBox="0 0 94 82" fill="none"><polygon points="18,46 36,46 22,80 4,80" fill="#2E86F0"/><polygon points="45,24 63,24 49,80 31,80" fill="#fff"/><polygon points="72,2 90,2 76,80 58,80" fill="#FFC629"/></svg>
+        </div>
+        <div>
+          <div class="wm-name">MOMENTUM</div>
+          <div class="wm-sub">COACHING</div>
+        </div>
+      </div>
+    </div>
+    <div class="tile dark">
+      <div class="lockup dark-txt">
+        <div class="markbox on-dark">
+          <svg viewBox="0 0 94 82" fill="none"><polygon points="18,46 36,46 22,80 4,80" fill="#2E86F0"/><polygon points="45,24 63,24 49,80 31,80" fill="#fff"/><polygon points="72,2 90,2 76,80 58,80" fill="#FFC629"/></svg>
+        </div>
+        <div>
+          <div class="wm-name">MOMENTUM</div>
+          <div class="wm-sub">COACHING</div>
+        </div>
+      </div>
+    </div>
+    <div class="tile light">
+      <div class="markrow">
+        <div class="mono"><span>M</span><i></i></div>
+        <div class="markbox on-light" style="width:64px;height:64px;border-radius:14px;">
+          <svg viewBox="0 0 94 82" fill="none" style="width:34px;height:30px;"><polygon points="18,46 36,46 22,80 4,80" fill="#2E86F0"/><polygon points="45,24 63,24 49,80 31,80" fill="#fff"/><polygon points="72,2 90,2 76,80 58,80" fill="#FFC629"/></svg>
+        </div>
+        <div style="display:flex;align-items:flex-end;">
+          <svg viewBox="0 0 94 82" width="58" height="51" fill="none"><polygon points="18,46 36,46 22,80 4,80" fill="#1A6FD4"/><polygon points="45,24 63,24 49,80 31,80" fill="#0A0E15"/><polygon points="72,2 90,2 76,80 58,80" fill="#F2B705"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="tile dark">
+      <div class="lockup dark-txt" style="gap:10px;">
+        <div class="wm-name" style="font-size:44px;">MOMENTUM</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* ============================================================
+   SPACING, RADII, SHADOWS, MOTION — Momentum Coaching
+   4px base grid. Crisp, athletic. Radii are modest (not pill-soft);
+   shadows are neutral and subtle — depth, not drama.
+   ============================================================ */
+:root {
+  /* ---- Spacing scale (4px base) ---- */
+  --space-0: 0;
+  --space-1: 0.25rem;   /* 4 */
+  --space-2: 0.5rem;    /* 8 */
+  --space-3: 0.75rem;   /* 12 */
+  --space-4: 1rem;      /* 16 */
+  --space-5: 1.5rem;    /* 24 */
+  --space-6: 2rem;      /* 32 */
+  --space-7: 2.5rem;    /* 40 */
+  --space-8: 3rem;      /* 48 */
+  --space-9: 4rem;      /* 64 */
+  --space-10: 5rem;     /* 80 */
+  --space-11: 6rem;     /* 96 */
+  --space-12: 8rem;     /* 128 */
+
+  /* ---- Radii (crisp, athletic — not overly rounded) ---- */
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+  /* ---- Borders ---- */
+  --border-width: 1px;
+  --border-width-thick: 2px;
+
+  /* ---- Shadows (deep, for dark surfaces) ---- */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.40);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.45), 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.45), 0 2px 5px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.55), 0 5px 12px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 30px 64px rgba(0, 0, 0, 0.6);
+  --shadow-accent: 0 8px 26px rgba(30, 128, 227, 0.40);
+  --ring-focus: 0 0 0 3px rgba(30, 128, 227, 0.40);
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);   /* @kind other */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --ease-snap: cubic-bezier(0.2, 0.9, 0.2, 1); /* @kind other */
+  --dur-fast: 120ms;   /* @kind other */
+  --dur-base: 200ms;   /* @kind other */
+  --dur-slow: 360ms;   /* @kind other */
+
+  /* ---- Layout ---- */
+  --container-max: 1200px;
+  --container-wide: 1360px;
+  --header-h: 72px;
+}

@@ -1,0 +1,28 @@
+<!-- @dsCard group="Colors" viewport="700x200" name="Momentum Blue — accent scale" subtitle="Bright blue for links / buttons / hover (500); deep brand blue for fills & blocks (700)" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: var(--font-body); background: var(--bg-surface); padding: 18px; }
+  .row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+  .sw { border-radius: var(--radius-sm); height: 84px; border: 1px solid rgba(255,255,255,.10); }
+  .name { font-family: var(--font-mono); font-size: 10px; margin: 7px 1px 0; color: var(--text-strong); }
+  .hex { font-family: var(--font-mono); font-size: 9.5px; color: var(--text-muted); margin: 1px; }
+  .tag { display:inline-block; margin-top:10px; font-family: var(--font-heading); font-weight:600; font-size:10px; letter-spacing:.06em; color: var(--c-blue-300); }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div><div class="sw" style="background:var(--c-blue-tint)"></div><div class="name">tint</div><div class="hex">14% α</div></div>
+    <div><div class="sw" style="background:var(--c-blue-300)"></div><div class="name">300</div><div class="hex">#6FB0EE</div></div>
+    <div><div class="sw" style="background:var(--c-blue-400)"></div><div class="name">400</div><div class="hex">#3B93E8</div></div>
+    <div><div class="sw" style="background:var(--c-blue-500)"></div><div class="name">500 ★</div><div class="hex">#1E80E3</div></div>
+    <div><div class="sw" style="background:var(--c-blue-600)"></div><div class="name">600</div><div class="hex">#0A66C7</div></div>
+    <div><div class="sw" style="background:var(--c-blue-700)"></div><div class="name">700 ◆</div><div class="hex">#0556AF</div></div>
+  </div>
+  <span class="tag">★ PRIMARY — LINKS, BUTTONS, FOCUS&nbsp;&nbsp;·&nbsp;&nbsp;◆ DEEP — FILLS, GRADIENTS, LARGE BLOCKS</span>
+</body>
+</html>

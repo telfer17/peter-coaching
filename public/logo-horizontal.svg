@@ -1,0 +1,10 @@
+<svg width="252" height="84" viewBox="0 0 252 84" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Momentum Coaching">
+  <rect x="0" y="12" width="60" height="60" rx="14" fill="#0A0E15"></rect>
+  <g transform="translate(9,23) scale(0.46)">
+    <polygon points="18,46 36,46 22,80 4,80" fill="#2E86F0"></polygon>
+    <polygon points="45,24 63,24 49,80 31,80" fill="#FFFFFF"></polygon>
+    <polygon points="72,2 90,2 76,80 58,80" fill="#FFC629"></polygon>
+  </g>
+  <text x="76" y="45" font-family="Anton, &#39;Arial Narrow&#39;, sans-serif" font-size="32" letter-spacing="0.5" fill="#0A0E15">MOMENTUM</text>
+  <text x="78" y="66" font-family="&#39;Barlow Condensed&#39;, &#39;Arial Narrow&#39;, sans-serif" font-weight="600" font-size="13.5" letter-spacing="4.3" fill="#6C7480">COACHING</text>
+</svg>

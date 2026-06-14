@@ -1,0 +1,27 @@
+<!-- @dsCard group="Spacing" viewport="700x170" name="Elevation — shadows" subtitle="Neutral & subtle. Depth, not drama. Plus the accent glow" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: var(--font-body); background: var(--c-bg); padding: 26px 22px; }
+  .row { display: flex; gap: 24px; align-items: center; }
+  .col { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .box { width: 92px; height: 60px; background: var(--c-mist); border: 1px solid var(--c-line); border-radius: var(--radius-md); }
+  .lbl { font-family: var(--font-mono); font-size: 10px; color: var(--text-strong); }
+  .accent { background: var(--c-blue-500); }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="col"><div class="box" style="box-shadow:var(--shadow-xs)"></div><div class="lbl">xs</div></div>
+    <div class="col"><div class="box" style="box-shadow:var(--shadow-sm)"></div><div class="lbl">sm</div></div>
+    <div class="col"><div class="box" style="box-shadow:var(--shadow-md)"></div><div class="lbl">md</div></div>
+    <div class="col"><div class="box" style="box-shadow:var(--shadow-lg)"></div><div class="lbl">lg</div></div>
+    <div class="col"><div class="box" style="box-shadow:var(--shadow-xl)"></div><div class="lbl">xl</div></div>
+    <div class="col"><div class="box accent" style="box-shadow:var(--shadow-accent)"></div><div class="lbl">accent</div></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!-- @dsCard group="Components" viewport="700x500" name="Surfaces — Cards, ServiceCard, Avatar" subtitle="Programme cards & social proof" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: var(--font-body); background: var(--c-polar); padding: 22px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+  .lbl { font-family: var(--font-mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); margin: 0 0 10px; }
+  .avrow { display: flex; gap: 22px; align-items: center; margin-top: 16px; }
+</style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script src="../../_ds_bundle.js"></script>
+  <script type="text/babel">
+    const NS = window.WeathersonCoachingDesignSystem_5286a0;
+    const { ServiceCard, Button, Badge, Avatar, AvatarGroup, Stat } = NS;
+    const User = () => (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>);
+    const Group = () => (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.5 3-5.5 6.5-5.5s6.5 2 6.5 5.5"/><path d="M17 5.5a3.5 3.5 0 0 1 0 7"/><path d="M18 14.5c2.7.4 4.5 2.3 4.5 5"/></svg>);
+    function Demo() {
+      return (
+        <div>
+          <div className="grid">
+            <ServiceCard icon={<User/>} name="1-2-1 Coaching"
+              description="Individual sessions built entirely around one player's game."
+              price="£40" priceNote="/ session"
+              features={["60-minute focused session","Tailored technical plan","Optional video analysis"]}
+              badge={<Badge variant="solid">Most popular</Badge>}
+              featured
+              cta={<Button variant="primary" fullWidth>Book 1-2-1</Button>} />
+            <ServiceCard icon={<Group/>} name="Group Sessions"
+              description="Small-group coaching that keeps every player on the ball."
+              price="£15" priceNote="/ session"
+              features={["Max 6 players per coach","Age & ability matched","Weekday evenings"]}
+              badge={<Badge variant="accent">Ages 6–16</Badge>}
+              cta={<Button variant="secondary" fullWidth>Join a group</Button>} />
+          </div>
+          <div className="avrow">
+            <div>
+              <p className="lbl">Avatars · social proof</p>
+              <AvatarGroup>
+                <Avatar name="Jamie Smith" />
+                <Avatar name="Aoife Murphy" tone="accent" />
+                <Avatar name="Tom Reilly" />
+                <Avatar name="Peter Weatherson" />
+              </AvatarGroup>
+            </div>
+            <Stat value={120} unit="+" label="Players coached" tone="accent" />
+            <Avatar name="Peter Weatherson" size="xl" />
+          </div>
+        </div>
+      );
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+  </script>
+</body>
+</html>

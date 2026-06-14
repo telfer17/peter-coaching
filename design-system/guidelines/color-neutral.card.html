@@ -1,0 +1,27 @@
+<!-- @dsCard group="Colors" viewport="700x180" name="Neutral scale" subtitle="Dark greys for borders, fills, and muted/secondary text" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: var(--font-body); background: var(--bg-surface); padding: 18px; }
+  .row { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+  .sw { border-radius: var(--radius-sm); height: 84px; border: 1px solid rgba(255,255,255,.10); }
+  .name { font-family: var(--font-mono); font-size: 10px; margin: 7px 1px 0; color: var(--text-strong); }
+  .hex { font-family: var(--font-mono); font-size: 9.5px; color: var(--text-muted); margin: 1px; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div><div class="sw" style="background:var(--c-line)"></div><div class="name">Line</div><div class="hex">#1E2530</div></div>
+    <div><div class="sw" style="background:var(--c-gray-200)"></div><div class="name">200</div><div class="hex">#2A323F</div></div>
+    <div><div class="sw" style="background:var(--c-gray-300)"></div><div class="name">300</div><div class="hex">#3B4654</div></div>
+    <div><div class="sw" style="background:var(--c-gray-400)"></div><div class="name">400</div><div class="hex">#6B7480</div></div>
+    <div><div class="sw" style="background:var(--c-gray-500)"></div><div class="name">500</div><div class="hex">#9AA3AE</div></div>
+    <div><div class="sw" style="background:var(--c-gray-600)"></div><div class="name">600</div><div class="hex">#B9C0C9</div></div>
+    <div><div class="sw" style="background:var(--c-ink-700)"></div><div class="name">Body</div><div class="hex">#C9CFD7</div></div>
+  </div>
+</body>
+</html>
