@@ -214,8 +214,8 @@ textarea.wc-input { height: auto; min-height: 120px; padding: 12px 14px; line-he
 .wc-avatar-group .wc-avatar:not(:first-child) { margin-left: -12px; }
 
 /* ---- Modal animation keyframes ---- */
-@keyframes wcFade { from { opacity: 0; } to { opacity: 1; } }
-@keyframes wcPop { from { opacity: 0; transform: translateY(12px) scale(0.98); } to { opacity: 1; transform: none; } }
+@keyframes wc-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes wc-pop { from { opacity: 0; transform: translateY(12px) scale(0.98); } to { opacity: 1; transform: none; } }
 
 /* ---- Header / responsive layout (from the UI kit) ---- */
 .wc-menu-btn { display: none; }

@@ -61,8 +61,8 @@
         "message": "<Badge> variant must be one of 'accent' | 'gold' | 'neutral' | 'solid' | 'success' | 'warning' | 'danger' | 'outline'."
       },
       {
-        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute > JSXIdentifier[name!=/^(?:variant|size|iconLeft|iconRight|fullWidth|as|children|key|ref|className|style|children)$/]",
-        "message": "<Button> doesn't accept that prop. Declared props: variant, size, iconLeft, iconRight, fullWidth, as, children."
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute > JSXIdentifier[name!=/^(?:variant|size|iconLeft|iconRight|fullWidth|disabled|as|children|key|ref|className|style|children)$/]",
+        "message": "<Button> doesn't accept that prop. Declared props: variant, size, iconLeft, iconRight, fullWidth, disabled, as, children."
       },
       {
         "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:primary|dark|secondary|ghost)$/]",
@@ -357,13 +357,13 @@
       "--bg-accent-fill": "color",
       "--bg-gold": "color",
       "--bg-gold-soft": "color",
-      "--text-strong": "font",
-      "--text-body": "font",
-      "--text-muted": "font",
-      "--text-inverse": "font",
-      "--text-accent": "font",
-      "--text-gold": "font",
-      "--text-on-accent": "font",
+      "--text-strong": "color",
+      "--text-body": "color",
+      "--text-muted": "color",
+      "--text-inverse": "color",
+      "--text-accent": "color",
+      "--text-gold": "color",
+      "--text-on-accent": "color",
       "--border-subtle": "color",
       "--border-strong": "color",
       "--border-accent": "color",

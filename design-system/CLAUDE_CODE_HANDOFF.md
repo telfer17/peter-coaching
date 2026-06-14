@@ -6,7 +6,7 @@ This is the **Momentum Coaching design system** — everything Claude Code needs
 
 1. **Unzip into your website repo.** A good home is a top-level folder, e.g. `design-system/`, or as a Claude Code skill at `.claude/skills/momentum-coaching-design/`.
 2. **Point Claude Code at it.** In your repo, tell Claude Code:
-   > "Read `design-system/SKILL.md` and `design-system/README.md`. This is our brand system. Build/restyle the site to match it — use the tokens in `styles.css`, recreate the components in our framework using the files in `components/` as reference, and use the real assets in `assets/`."
+   > "Read `design-system/SKILL.md` and `design-system/readme.md`. This is our brand system. Build/restyle the site to match it — use the tokens in `styles.css`, recreate the components in our framework using the files in `components/` as reference, and use the real assets in `assets/`."
 3. `SKILL.md` is already formatted as an **Agent Skill** (YAML front-matter + instructions), so if you drop it under `.claude/skills/` Claude Code can invoke it by name.
 
 ## What to use directly vs. recreate
@@ -39,7 +39,7 @@ This is the **Momentum Coaching design system** — everything Claude Code needs
 Type: **Anton** (display/all-caps), **Barlow Condensed** (headings/labels/buttons), **Hanken Grotesk** (body/UI), **Geist Mono** (stats). All four are on Google Fonts — see `tokens/fonts.css`. For production, self-host the `.woff2` files.
 
 ## Read these first
-- **`README.md`** — the full design guide: brand context, voice & tone, visual foundations, iconography, asset list, component index.
+- **`readme.md`** — the full design guide: brand context, voice & tone, visual foundations, iconography, asset list, component index.
 - **`SKILL.md`** — the agent-skill entry point + quick reference.
 
 Everything else is referenced from those two files.

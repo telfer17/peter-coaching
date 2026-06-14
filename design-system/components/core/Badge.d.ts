@@ -9,4 +9,4 @@ export interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
 }
 
 /** Condensed uppercase status / category label. */
-export function Badge(props: BadgeProps): JSX.Element;
+export function Badge(props: BadgeProps): React.JSX.Element;

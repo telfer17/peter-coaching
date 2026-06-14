@@ -2,6 +2,7 @@ One-line: The Momentum action button — use for any primary or secondary call-t
 
 ```jsx
 import { Button } from "./Button";
+import { ArrowRight } from "lucide-react";
 
 <Button variant="primary" size="lg">Book a session</Button>
 <Button variant="dark" iconRight={<ArrowRight />}>View programmes</Button>

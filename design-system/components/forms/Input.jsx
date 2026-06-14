@@ -38,7 +38,8 @@ export function Input({
   label, hint, error, required = false, icon, id, className = "", ...rest
 }) {
   ensureStyles();
-  const fid = id || `wc-input-${Math.random().toString(36).slice(2, 8)}`;
+  const autoId = React.useId();
+  const fid = id || autoId;
   const msg = error || hint;
   return (
     <div className={["wc-field", error ? "wc-field--error" : "", className].filter(Boolean).join(" ")}>

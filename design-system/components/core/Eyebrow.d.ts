@@ -9,4 +9,4 @@ export interface EyebrowProps extends React.HTMLAttributes<HTMLSpanElement> {
 }
 
 /** Condensed uppercase kicker that sits above section headings. */
-export function Eyebrow(props: EyebrowProps): JSX.Element;
+export function Eyebrow(props: EyebrowProps): React.JSX.Element;

@@ -21,4 +21,4 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
  *
  * @startingPoint section="Core" subtitle="Primary, dark, secondary & ghost buttons" viewport="700x150"
  */
-export function Button(props: ButtonProps): JSX.Element;
+export function Button(props: ButtonProps): React.JSX.Element;

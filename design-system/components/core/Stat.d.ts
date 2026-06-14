@@ -12,4 +12,4 @@ export interface StatProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 /** Display-size stat block with a mono caption — for credibility numbers. */
-export function Stat(props: StatProps): JSX.Element;
+export function Stat(props: StatProps): React.JSX.Element;

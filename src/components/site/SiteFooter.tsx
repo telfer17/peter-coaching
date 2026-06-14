@@ -38,11 +38,14 @@ export function SiteFooter() {
             </p>
             <div style={{ display: "flex", gap: 10, marginTop: 20 }}>
               {/* PLACEHOLDER — confirm with client: social profiles not yet linked */}
-              {[<Instagram key="ig" size={18} />, <X key="x" size={18} />].map((ic, i) => (
+              {[
+                { label: "Instagram", icon: <Instagram size={18} /> },
+                { label: "X", icon: <X size={18} /> },
+              ].map((s) => (
                 <a
-                  key={i}
+                  key={s.label}
                   href="#"
-                  aria-label="social"
+                  aria-label={s.label}
                   style={{
                     width: 38,
                     height: 38,
@@ -53,7 +56,7 @@ export function SiteFooter() {
                     color: "#fff",
                   }}
                 >
-                  {ic}
+                  {s.icon}
                 </a>
               ))}
             </div>

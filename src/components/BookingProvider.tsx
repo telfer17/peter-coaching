@@ -66,7 +66,7 @@ function BookingModal({ onClose }: { onClose: () => void }) {
         display: "grid",
         placeItems: "center",
         padding: 20,
-        animation: "wcFade 180ms ease",
+        animation: "wc-fade 180ms ease",
       }}
     >
       <div
@@ -80,7 +80,7 @@ function BookingModal({ onClose }: { onClose: () => void }) {
           boxShadow: "var(--shadow-xl)",
           padding: 30,
           position: "relative",
-          animation: "wcPop 220ms cubic-bezier(0.16,1,0.3,1)",
+          animation: "wc-pop 220ms cubic-bezier(0.16,1,0.3,1)",
         }}
       >
         <button
